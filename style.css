@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background: rgb(8,56,90);
+    background: linear-gradient(321deg, rgba(8,56,90,1) 0%, rgba(182,96,21,1) 51%, rgba(24,158,178,0.8727941860337886) 100%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    color: rgb(255, 231, 11);
+    margin-right: 40px;
+    font-size: 50px;
+}
+
+.container h1 span {
+    color: rgb(202, 234, 236);
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.img {
+    width: 100px;
+    height: 500px;
+    border-radius: 30px;
+    position: relative;
+    transition: width 0.8s;
+}
+
+.img:nth-child(1) {
+    background-image: url(images/photo1.jpg);
+    background-size: cover;
+    background-position:none;
+}
+
+.img:nth-child(2) {
+    background-image: url(images/photo2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img:nth-child(3) {
+    background-image: url(images/photo3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img:nth-child(4) {
+    background-image: url(images/photo4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img h3 {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.2s, opacity 0.3s;
+    color: aliceblue;
+}
+
+.img:hover {
+    width: 300px;
+    cursor: pointer;
+}
+
+.img:hover h3 {
+    opacity: 1;
+    bottom: 25px;
+}
